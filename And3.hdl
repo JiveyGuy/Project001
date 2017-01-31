@@ -12,12 +12,12 @@
  */
 
 CHIP And {
-    IN a, b;
+    IN a, b, c;
     OUT out;
 
     PARTS:
 
-    Nand(a=a, b=b, out=result);
-    Not(in=result, out=out); 
+    And( a = a, b = b, out = f);
+    And ( a = f, b = c, out = out);
 
 }
