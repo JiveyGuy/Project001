@@ -43,22 +43,30 @@ CHIP ALU {
 
     PARTS:
    // Put you code here:
+
 	//ZeroX
 	Mux16( a = x, b = false, sel = zx, out = zeroxout); 
 
 	//NotX
-	Not16( in = x; out = notx); 
-	Mux16( a = notx, b = zeroxout, sel = nx, out = notxout); 
+	Not16( in = zeroxout, out = notx); 
+	Mux16( a = zeroxout, b = notx, sel = nx, out = notxout); 
 
 
 	//Zeroy
 	Mux16( a = x, b = false, sel = zy, out = zeroyout); 
 
 	//Noty
-	Not16( in = y; out = noty); 
-	Mux16( a = noty, b = zeroyout, sel = ny, out = notyout);
+	Not16( in = zeroyout, out = noty); 
+	Mux16( a = zeroyout, b = noty, sel = ny, out = notyout);
 
-	
+	//Function
+	Add16( a = notxout, b = notyout, out = addout);
+	And16( a = notxout, b = notyout, out = andout); 
+	Mux16( a = andout, b = addout, sel = f, out = fout); 
+
+	//Negate out
+	Not16( in = fout, out = nout);
+	Mux16( a = fout, b = nout, sel = no, out = out);
 
 	
 }
