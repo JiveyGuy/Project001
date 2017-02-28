@@ -1,0 +1,12 @@
+ 16384 is first pixel on screen,
+Screen is 512, 256, 
+32 words can be displayed on screen.
+-1 points a word
+a adress + 32 equals the next line down
+
+Add +1 to get next horizontal line, 
+
+
+labels = (HERE)
+
+= JGT , JEQ , JGE , JLT , JNE , JLE , JMP, or null
