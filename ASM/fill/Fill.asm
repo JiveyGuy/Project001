@@ -1,4 +1,4 @@
-(Loop)
+(LOOP)
 @16384
 D = A
 @SCREEN
@@ -6,7 +6,7 @@ M = D
 @24576
 D = M - 1
 @FILL
-D;JEZ
+D;JEQ
 @LOOP
 0;JMP
 
@@ -14,7 +14,7 @@ D;JEZ
 @24576
 D = M - 1
 @LOOP
-D;JLT
+D;JGT
 @32
 D = A
 @SCREEN
