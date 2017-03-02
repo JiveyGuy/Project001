@@ -11,8 +11,8 @@ D;JLT
 @1
 D = A
 @FX
-D;JEZ
-@0
+D;JEQ
+A = 0
 M = M + M
 @1
 M = M - 1
