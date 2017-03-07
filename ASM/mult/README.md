@@ -1,10 +1,10 @@
-'Mult.asm'
+Mult.asm
 
-**Multiplication: in the Hack computer, the top 16 RAM words (RAM[0] ... RAM[15]) are also referred to as the so-called virtual registers R0 ... R15.**
+Multiplication: in the Hack computer, the top 16 RAM words (RAM[0] ... RAM[15]) are also referred to as the so-called virtual registers R0 ... R15. 
 
 
 
->With this terminology in mind, this program computes the value R0*R1 and stores the result in R2.
+With this terminology in mind, this program computes the value R0*R1 and stores the result in R2.
 
 
 

@@ -1,4 +1,4 @@
-**I/O handling:** this program illustrates low-level handling of the screen and keyboard devices, as follows. 
+I/O handling: this program illustrates low-level handling of the screen and keyboard devices, as follows. 
 
 The program runs an infinite loop that listens to the keyboard input. When a key is pressed (any key), the program blackens the screen, i.e. writes "black" in every pixel; the screen should remain fully black as long as the key is pressed. 
 
@@ -8,4 +8,4 @@ The simple Fill.tst script, which comes with no compare file, is designed to do 
 
 The FillAUtomatic.tst script, along with the compare file FillAutomatic.cmp, are designed to test the Fill program automatically, as described by the test script documentation.
 
->For completeness of testing, it is recommended to test the Fill program both interactively and automatically.
+For completeness of testing, it is recommended to test the Fill program both interactively and automatically.
