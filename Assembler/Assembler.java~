@@ -2,7 +2,7 @@ import java.io.FileNotFoundException;
 public class Assembler{
   public static void main(String [] args){
     
-    String fileName = "prog.asm";
+    String fileName = "program.asm";
     
     try{
       
@@ -10,11 +10,10 @@ public class Assembler{
       
       while(asmParser.hasMoreCommands()){
         if(asmParser.commandType() == Commands.COMMENT){
-          asmParser.advance();
           continue;
         }
         System.out.println(asmParser.commandType());
-        asmParser.advance();
+        
       }
       
       
