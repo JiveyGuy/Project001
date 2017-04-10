@@ -1,0 +1,3 @@
+public enum Commands{
+  C_COMMAND, L_COMMAND, A_COMMAND, COMMENT, UNKNOWN
+}
